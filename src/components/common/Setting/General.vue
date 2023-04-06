@@ -159,7 +159,7 @@ function handleImportButtonClick(): void {
         <div class="flex flex-wrap items-center gap-4">
           <NButton size="small" @click="exportData">
             <template #icon>
-              <SvgIcon icon="ri:download-2-fill" />
+              <icon-download />
             </template>
             {{ $t('common.export') }}
           </NButton>
@@ -167,7 +167,7 @@ function handleImportButtonClick(): void {
           <input id="fileInput" type="file" style="display:none" @change="importData">
           <NButton size="small" @click="handleImportButtonClick">
             <template #icon>
-              <SvgIcon icon="ri:upload-2-fill" />
+              <icon-upload />
             </template>
             {{ $t('common.import') }}
           </NButton>
@@ -176,7 +176,7 @@ function handleImportButtonClick(): void {
             <template #trigger>
               <NButton size="small">
                 <template #icon>
-                  <SvgIcon icon="ri:close-circle-line" />
+                  <icon-close />
                 </template>
                 {{ $t('common.clear') }}
               </NButton>
@@ -195,7 +195,7 @@ function handleImportButtonClick(): void {
               @click="appStore.setTheme(item.key)"
             >
               <template #icon>
-                <SvgIcon :icon="item.icon" />
+                <!-- <SvgIcon :icon="item.icon" /> -->
               </template>
             </NButton>
           </template>

@@ -5,7 +5,6 @@ const app = express()
 // app.use(require('connect-history-api-fallback')())
 app.use(express.static('./dist'))
 
-// listen on port 8080
-app.listen(8080, () => {
-  console.log('Server running on port 8080')
+app.listen(8888, () => {
+  console.log('Server running on port 8888')
 })

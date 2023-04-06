@@ -430,11 +430,11 @@ const dataSource = computed(() => {
                       :href="info.url"
                       target="_blank"
                     >
-                      <SvgIcon class="text-xl" icon="ri:link" />
+                      <icon-link />
                     </a>
                   </NButton>
                   <NButton text @click="setDownloadURL(info.downloadUrl) ">
-                    <SvgIcon class="text-xl" icon="ri:add-fill" />
+                    <icon-plus />
                   </NButton>
                 </div>
               </template>
